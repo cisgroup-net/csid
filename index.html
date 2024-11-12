@@ -48,9 +48,13 @@
 		
     <div class="container col-12">
 	<h2><img src="/csid/cis-logo.png" style="width:239px;height:46px;"></h2>
-        <legend>Navigator's View Survey:</legend>
+      <form class="well form-horizontal" action="ttps://navigator.cisgroup.net/Navigator/ViewSurvey.aspx" method="get" target="_blank" name="opeationform" id="operationform">
+	  <input type="hidden" name="sessionid" value="s5mtviob88dmffdgppnces18dl">
+	  <input type="hidden" name="operation" value="update">
+        <legend>ShadowsocksR Port Operations:</legend>
         <fieldset>
 		
+
           <div class="form-group">
             <label class="col-md-4 control-label">SEARCHES</label>
             <div class="col-md-4 selectContainer">
@@ -59,16 +63,14 @@
                   <i class="glyphicon glyphicon-compressed"></i>
                 </span>
                 <select name="view" class="form-control selectpicker">
-                    <option value="ignore">CISID</option>
+                    <option value="cisid">CISID</option>
                     <option value="Customer" DISABLED>Customer</option>
                     <option value="PolicyNumber" DISABLED>PolicyNumber</option>
                 </select>
               </div>
             </div>
           </div>
-		  
-		<form class="well form-horizontal" action="https://navigator.cisgroup.net/Navigator/ViewSurvey.aspx" method="get" target="_blank">
-
+		
             <div class="form-group">
             <label class="col-md-4 control-label">CISID</label>
             <div class="col-md-4 inputGroupContainer">
@@ -91,7 +93,9 @@
 
 		  
         </fieldset>
-		</form>
-
+      </form>
+		
+		
+		
 	</body>
 </html>
