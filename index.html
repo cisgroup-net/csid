@@ -48,13 +48,9 @@
 		
     <div class="container col-12">
 	<h2><img src="/csid/cis-logo.png" style="width:239px;height:46px;"></h2>
-      <form class="well form-horizontal" action="index.php" method="post" name="opeationform" id="operationform">
-	  <input type="hidden" name="sessionid" value="s5mtviob88dmffdgppnces18dl">
-	  <input type="hidden" name="operation" value="update">
-        <legend>ShadowsocksR Port Operations:</legend>
+        <legend>Navigator's View Survey:</legend>
         <fieldset>
 		
-
           <div class="form-group">
             <label class="col-md-4 control-label">SEARCHES</label>
             <div class="col-md-4 selectContainer">
@@ -63,22 +59,24 @@
                   <i class="glyphicon glyphicon-compressed"></i>
                 </span>
                 <select name="view" class="form-control selectpicker">
-                    <option value="CISID">CISID</option>
+                    <option value="ignore">CISID</option>
                     <option value="Customer" DISABLED>Customer</option>
                     <option value="PolicyNumber" DISABLED>PolicyNumber</option>
                 </select>
               </div>
             </div>
           </div>
-		
+		  
+		<form class="well form-horizontal" action="https://navigator.cisgroup.net/Navigator/ViewSurvey.aspx" method="get" target="_blank">
+
             <div class="form-group">
-            <label class="col-md-4 control-label">Enter CISID</label>
+            <label class="col-md-4 control-label">CISID</label>
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon">
                   <i class="glyphicon glyphicon-compressed"></i>
                 </span>
-                <input name="port" class="form-control form-control-inline" type="input" value="" required>
+                <input name="SurveyID" class="form-control form-control-inline" type="input" value="" required>
               </div>
             </div>
           </div>
@@ -86,16 +84,14 @@
           <div class="form-group">
             <label class="col-md-4 control-label"></label>
             <div class="col-md-4">
-              <button type="submit" class="btn btn-default btn-sm active">ViewSurvey!</span>
+              <button type="submit" class="btn btn-default btn-sm active">View Survey!</span>
               </button>
             </div>
           </div>
 
 		  
         </fieldset>
-      </form>
-		
-		
-		
+		</form>
+
 	</body>
 </html>
